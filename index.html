@@ -8,6 +8,18 @@
     <title>Stephen Zhang</title>
   </head>
   <body>
+    <!-- Cursor -->
+    <img
+      id="cursor"
+      class="absolute z-50 w-96 h-96 transform translate-x-[-50%] translate-y-[-50%] pointer-events-none scale-0 hidden md:block"
+      src=""
+    />
+    <button
+      class="w-20 h-20 bg-blue-700 text-white text-xl rounded-full absolute transform translate-x-[-50%] translate-y-[-50%] z-50 pointer-events-none scale-0 hidden md:block"
+      id="cursor-click"
+    >
+      View
+    </button>
     <!-- Navbar -->
     <div
       class="flex flex-col md:flex-row items-end p-4 fixed md:text-3xl top-8 right-0 navbar z-50 bg-white md:pl-8"
@@ -39,7 +51,7 @@
     </div>
     <!-- Home -->
     <div id="home"></div>
-    <div class="w-screen h-[100svh] relative md:p-8 bg-blue-50 inset-0">
+    <div class="w-screen h-[100svh] relative md:p-8 bg-blue-50">
       <div class="absolute md:bottom-8 md:left-8 bottom-4 left-4">
         <h1 class="md:text-3xl text-xl">Hello, I'm</h1>
         <h1 class="md:text-8xl text-4xl font-bold md:mb-2">Stephen Zhang</h1>
@@ -50,8 +62,8 @@
     <div class="w-screen flex flex-col items-center mt-40 px-8">
       <div class="flex md:flex-row flex-col md:w-2/3 gap-16">
         <p class="text-2xl md:text-4xl" id="about-one">
-          Avid problem solver in the realms of competitive
-          programming, math, cybersecurity, and web.
+          Avid problem solver in the realms of competitive programming, math,
+          cybersecurity, and web.
         </p>
         <p class="text-md">
           Student developer at Montgomery Blair High School with a passion for
@@ -66,7 +78,7 @@
         <h1 class="text-xl text-gray-500 mb-2 ml-4">Work</h1>
         <div class="bg-gray-400 w-full h-[1px]"></div>
         <a
-          class="w-full flex flex-col md:flex-row md:px-24 md:py-10 justify-between md:items-center items-start py-8 relative project"
+          class="w-full flex flex-col md:flex-row md:px-24 md:py-10 justify-between md:items-center items-start py-8 relative project cursor-pointer"
           href="https://leafy-szhanggg.vercel.app/"
         >
           <img src="images/leafy.png" alt="leafy" class="w-full md:hidden" />
@@ -77,10 +89,14 @@
           ></div>
         </a>
         <a
-          class="w-full flex flex-col md:flex-row md:px-24 md:py-10 justify-between md:items-center items-start py-8 relative project"
+          class="w-full flex flex-col md:flex-row md:px-24 md:py-10 justify-between md:items-center items-start py-8 relative project cursor-pointer"
           href="https://www.mchackathon.org/"
         >
-          <img src="images/leafy.png" alt="leafy" class="w-full md:hidden" />
+          <img
+            src="images/mchackathon.png"
+            alt="mchackathon"
+            class="w-full md:hidden"
+          />
           <h1 class="md:text-7xl text-4xl mt-4 md:mt-0 pname">MC Hackathon</h1>
           <h1 class="md:text-2xl prole">Design & Development</h1>
           <div
@@ -88,11 +104,17 @@
           ></div>
         </a>
         <a
-          class="w-full flex flex-col md:flex-row md:px-24 md:py-10 justify-between md:items-center items-start py-8 relative project"
+          class="w-full flex flex-col md:flex-row md:px-24 md:py-10 justify-between md:items-center items-start py-8 relative project cursor-pointer"
           href="https://mcps-scheduler.herokuapp.com/"
         >
-          <img src="images/leafy.png" alt="leafy" class="w-full md:hidden" />
-          <h1 class="md:text-7xl text-4xl mt-4 md:mt-0 pname">MCPS Scheduler</h1>
+          <img
+            src="images/scheduler.png"
+            alt="scheduler"
+            class="w-full md:hidden"
+          />
+          <h1 class="md:text-7xl text-4xl mt-4 md:mt-0 pname">
+            MCPS Scheduler
+          </h1>
           <h1 class="md:text-2xl prole">Design & Development</h1>
           <div
             class="bg-gray-400 w-full h-[1px] absolute bottom-0 left-0"
@@ -101,14 +123,30 @@
       </div>
     </div>
     <!-- Contact -->
-    <div class="w-screen flex flex-col items-start md:p-8 p-4 bg-gray-800 text-white" id="contact-section">
+    <div
+      class="w-screen flex flex-col items-start md:p-8 p-4 bg-gray-800 text-white"
+      id="contact-section"
+    >
       <h1 class="md:text-8xl text-4xl mt-20" href="" id="contact">Contact</h1>
-      <p class="md:text-xl text-gray-400 md:mt-16 mt-8" id="contact">contact me on</p>
-      <a class="md:text-7xl text-3xl" href="https://www.linkedin.com/in/stephen-zhang-3b06882b5/">LINKEDIN</a>
+      <p class="md:text-xl text-gray-400 md:mt-16 mt-8" id="contact">
+        contact me on
+      </p>
+      <a
+        class="md:text-7xl text-3xl"
+        href="https://www.linkedin.com/in/stephen-zhang-3b06882b5/"
+        >LINKEDIN</a
+      >
       <a class="md:text-7xl text-3xl" href="">DISCORD</a>
-      <a class="md:text-7xl text-3xl" href="mailto:stephenzhang537@gmail.com">EMAIL</a>
-      <div class="flex md:flex-row justify-between md:justify-start w-full md:gap-8 md:text-2xl text-md md:mt-16 mt-8 text-gray-400" id="socials">
-        <a href="https://open.spotify.com/user/6ne8fo3riyns2qsi9sz0kuicj">Spotify</a>
+      <a class="md:text-7xl text-3xl" href="mailto:stephenzhang537@gmail.com"
+        >EMAIL</a
+      >
+      <div
+        class="flex md:flex-row justify-between md:justify-start w-full md:gap-8 md:text-2xl text-md md:mt-16 mt-8 text-gray-400"
+        id="socials"
+      >
+        <a href="https://open.spotify.com/user/6ne8fo3riyns2qsi9sz0kuicj"
+          >Spotify</a
+        >
         <a href="https://www.instagram.com/srzhxng/">Instagram</a>
         <a href="https://github.com/szhanggg">GitHub</a>
         <a href="">Resume</a>
