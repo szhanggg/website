@@ -67,6 +67,7 @@ if (window.innerWidth > 768) {
 
   const projects = document.querySelectorAll("a.project");
   const cursor = document.querySelector("#cursor");
+  const cursorImg = cursor.querySelector("img");
   const cursorText = document.querySelector("#cursor-click");
 
   let xCTo = gsap.quickTo("#cursor", "left", {
@@ -135,7 +136,7 @@ if (window.innerWidth > 768) {
         scale: 1,
         duration: 0.2,
       });
-      cursor.src = project.querySelector("img").src;
+      cursorImg.src = project.querySelector("img").src;
     });
 
     project.addEventListener("mouseleave", () => {

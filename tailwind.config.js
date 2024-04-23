@@ -6,6 +6,13 @@ export default {
       fontFamily: {
         kalam: ["Kalam", "cursive"],
       },
+      colors: {
+        'powderblue': '#B4CDED',
+        'indigodye': '#344966',
+        'richblack': '#0D1821',
+        'babypowder': '#F0F4EF',
+        'sage': 'BFCC94',
+      }
     },
   },
   plugins: [],
