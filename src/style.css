@@ -1,5 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Mori;
+    font-weight: 400;
+    src: url('./fonts/PPMori-Regular.otf') format('opentype');
+  }
+  @font-face {
+    font-family: Mori;
+    font-weight: 600;
+    src: url('./fonts/PPMori-SemiBold.otf') format('opentype');
+  }
+}

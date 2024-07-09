@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        kalam: ["Kalam", "cursive"],
+        'mori': ['Mori', 'sans-serif'],
       },
       colors: {
         'powderblue': '#B4CDED',
