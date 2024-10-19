@@ -13,10 +13,10 @@ if (window.innerWidth > 768) {
       gsap.to(link, { y: "0px", duration: 0.2, ease: "power2.out" });
     });
     link.addEventListener("click", (event) => {
-      event.preventDefault();
-
-      const targetId = event.currentTarget.getAttribute("href");
-      lenis.scrollTo(targetId);
+      // event.preventDefault();
+      //
+      // const targetId = event.currentTarget.getAttribute("href");
+      // lenis.scrollTo(targetId);
     });
   });
 
@@ -144,3 +144,26 @@ if (window.innerWidth > 768) {
     });
   });
 }
+
+// Setup timeline
+const tl = gsap.timeline({
+  defaults: {
+    duration: 0.5,
+    ease: "power2.in",
+    opacity: 0,
+  },
+});
+
+// Animate the name on pageload
+// Flip the s from upside down to right side up
+tl.from("#letter-one", {
+  rotation: 90,
+  x: -100,
+}, "1");
+// the g will dangle from the right side in
+t1.from("#letter-twelve", {
+  rotate: -60,
+}, "1");
+
+// Start the animation
+tl.play();

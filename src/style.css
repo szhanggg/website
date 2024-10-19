@@ -14,3 +14,25 @@
     src: url('/fonts/PPMori-SemiBold.otf') format('opentype');
   }
 }
+
+.hero-text {
+  font-family: Mori;
+  font-size: 4rem;
+  line-height: 1;
+
+  @media (min-width: 640px) {
+    font-size: 6rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 7rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 10rem;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 12rem;
+  }
+}
