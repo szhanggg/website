@@ -145,25 +145,25 @@ if (window.innerWidth > 768) {
   });
 }
 
-// Setup timeline
-const tl = gsap.timeline({
-  defaults: {
-    duration: 0.5,
-    ease: "power2.in",
-    opacity: 0,
-  },
-});
-
-// Animate the name on pageload
-// Flip the s from upside down to right side up
-tl.from("#letter-one", {
-  rotation: 90,
-  x: -100,
-}, "1");
-// the g will dangle from the right side in
-t1.from("#letter-twelve", {
-  rotate: -60,
-}, "1");
-
-// Start the animation
-tl.play();
+// // Setup timeline
+// const tl = gsap.timeline({
+//   defaults: {
+//     duration: 0.5,
+//     ease: "power2.in",
+//     opacity: 0,
+//   },
+// });
+//
+// // Animate the name on pageload
+// // Flip the s from upside down to right side up
+// tl.from("#letter-one", {
+//   rotation: 90,
+//   x: -100,
+// }, "1");
+// // the g will dangle from the right side in
+// t1.from("#letter-twelve", {
+//   rotate: -60,
+// }, "1");
+//
+// // Start the animation
+// tl.play();
